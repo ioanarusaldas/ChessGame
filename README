@@ -5,6 +5,74 @@ Studenti:
 			Godinel Mihai Alexandru
 Grupa:	325CB
 
+COMENZI RULARE:
+    make build -compilare
+    make run -rulare            
+            
+            ETAPA 1
+
+Faza initiala:
+    In vederea realizarii conexiunii cu xboard s-au ocupat Irina si Mihai.
+Pentru conexiune am incercat cateva System.out-uri si cateva citiri de 
+la Stdin. Am reusit apoi, utilizarea buffered I/O.
+
+    In vederea structurarii proiectului a avut loc o intalnire a echipei. Atunci
+am stabilit urmatoarele:
+        -tabla interna sa fie realizata cu o MATRICE 
+        -piesele vor fi reprezentate prin CLASE SEPARATE care mostenesc CLASA 
+    PARINTE "Piece"
+        -INTELEGEREA comenzilor xboard
+        -RESPONSABILITATEA fiecaruia in cadrul acestei etape
+        
+Urmatoarea faza:
+    Mihai s-a ocupat de implementarea tablii interne precum si a pieselor
+    Irina si Rusalda s-au ocupat de mutarea unui pion.
+    
+    Restul proiectului a fost realizat in colaborare prin platforme online de tip 
+voce si share-ing deoarece platforma GitLab avea probleme.
+
+IMPLEMENTARE:
+    reprezentare piese: PIECE -clasa parinte contine campunrile
+                                                (NAME,COLOR,POSITION)
+                        PAWN,BISHOP,QUEEN,KING,ROOK,KNIGHT -clase copil
+                        
+    reprezentare tabla: BOARD -PIECE[][](aici se realizeaza configurarea tablii)
+    
+    reprezentare pozitie piesa: POSITION - char x,char y(coordonatele piesei)
+    
+    reprezentare comenzi xboard: XBOARDCOMMANDS - Board board -pentru retinerea
+                                                                tablii
+    rulare: MAIN
+    
+BOARD metode:   -configBoard -configureaza tabla 
+                -updateBoard -actualizeaza tabla 
+                -kingCheckMate -verifica daca regele se afla in sah
+                
+PAWN metode:    -legalMovesForBlackBot -calculeaza mutari legale bot negru
+                -lebalMovesForWhiteBot -calculeaza mutari legale bot alb
+        
+XBOARDCOMMANDS metode: -startGame -realizeaza configurarea tablii 
+                        -white - alege random mutare valida pion alb
+                        -black - alege random mutare valida pion negru
+                        -newCommand -reinitializeaza tabla interna
+                        -xboardCommand -confifureaza jocul 
+                        -currentPawn -actualizeaza pozitia pion
+                        -pawnTaken -verificare pion  luat
+MAIN -verifica comenzile primite de la xboard, apeleaza metodele corespunzatoare
+    si genereaza output (mutari,resign etc.)
+                                                 
+REPREZENTARE TABLA:
+Rook a1 white Knight b1 white Bishop c1 white Queen d1 white King e1 white Bishop f1 white Knight g1 white Rook h1 white 
+Pawn a2 white Pawn b2 white Pawn c2 white Pawn d2 white Pawn e2 white Pawn f2 white Pawn g2 white Pawn h2 white 
+null null null null null null null null 
+null null null null null null null null 
+null null null null null null null null 
+null null null null null null null null 
+Pawn a7 black Pawn b7 black Pawn c7 black Pawn d7 black Pawn e7 black Pawn f7 black Pawn g7 black Pawn h7 black 
+Rook a8 black Knight b8 black Bishop c8 black Queen d8 black King e8 black Bishop f8 black Knight g8 black Rook h8 black 
+****************************************************************************************************************
+		ETAPA 2
+
 
 	Pentru aceasta etapa am reusit sa mutam toate piesele pe tabla (random).
 Insa din lipsa de timp nu am putut finaliza etapa.
