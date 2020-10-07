@@ -1,0 +1,25 @@
+Echipa: AlphaTeam
+Studenti: 
+			Grigore Irina Domnica
+			Savu Ioana Rusalda
+			Godinel Mihai Alexandru
+Grupa:	325CB
+
+
+	Pentru aceasta etapa am reusit sa mutam toate piesele pe tabla (random).
+Insa din lipsa de timp nu am putut finaliza etapa.
+	Regele cand se afla in sah nu stie sa iasa astfel ca urmatoarea mutare va fi
+considerata ilegala.
+
+ In fiecare clasa ce reprezinta o piesa se afla o metoda care generaza mutarile
+ valide pentru tipul respectiv de piesa si verifica sa nu lase regel in sah prin
+ metoda (kingInDanger()).
+ In clasa king exista metode care verifica daca regele este pus in sah de 
+ oricare dintre piesele adversare (sahFromRook, sahFromKnight, sahFromKing, etc.)
+ 	De asemenea, deoarece codul a suferit modificari majore fata de prima etapa,
+ am dezactivat jocul pentru bot-ul alb,si comanda new.
+
+ 	Pentru ca am muncit destul de mult, am hotarat totusi sa trimitem 
+aceasta parte.
+
+Multumim!

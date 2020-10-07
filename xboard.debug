@@ -1,0 +1,235 @@
+locale = LC_CTYPE=en_US.UTF-8;LC_NUMERIC=ro_RO.UTF-8;LC_TIME=ro_RO.UTF-8;LC_COLLATE=C;LC_MONETARY=ro_RO.UTF-8;LC_MESSAGES=en_US.UTF-8;LC_PAPER=ro_RO.UTF-8;LC_NAME=ro_RO.UTF-8;LC_ADDRESS=ro_RO.UTF-8;LC_TELEPHONE=ro_RO.UTF-8;LC_MEASUREMENT=ro_RO.UTF-8;LC_IDENTIFICATION=ro_RO.UTF-8
+recognized 'normal' (-1) as variant normal
+recognized 'normal' (-1) as variant normal
+recognized 'normal' (-1) as variant normal
+shuffleOpenings = 0
+shuffleOpenings = 0
+Version: xboard 4.9.1 + fairymax ()
+Reset(1, 0) from gameMode 0
+recognized 'normal' (-1) as variant normal
+GameEnds(0, (null), 2)
+shuffleOpenings = 0
+StartChildProcess (dir=".") fairymax
+245 >first : xboard
+protover 2
+320 <first : tellics say     Fairy-Max 5.0b
+320 <first : tellics say     by H.G. Muller
+321 <first : feature myname="Fairy-Max 5.0b"
+322 >first : accepted myname
+322 <first : feature memory=1 exclude=1
+322 >first : accepted memory
+322 >first : accepted exclude
+322 <first : feature setboard=0 xedit=1 ping=1 done=0
+322 >first : accepted setboard
+322 >first : accepted xedit
+322 >first : accepted ping
+322 >first : accepted done
+322 <first : feature variants="normal,nocastle,shatranj,asean,makruk,cambodian,ai-wok,courier,knightmate,capablanca,gothic,janus,falcon,cylinder,berolina,super,seirawan,spartan,great,light-brigade,king-of-the-hill,bifurcator,team-mate,los-alamos,ciccolini,mexican,grande-acedrex,roman,almost-wildebeest,fairy"
+322 >first : accepted variants
+322 <first : feature option="Resign -check 0"
+322 >first : accepted option
+322 <first : feature option="Resign Threshold -spin 800 200 1200"
+322 >first : accepted option
+322 <first : feature option="Claim draw after -spin 50 0 200"
+322 >first : accepted option
+322 <first : feature option="Ini File -file /usr/share/games/fairymax/fmax.ini"
+322 >first : accepted option
+322 <first : feature option="Multi-PV Margin -spin 0 0 1000"
+322 >first : accepted option
+322 <first : feature option="Variant fairy selects -combo FIDE-Clobberers /// Clobberers-FIDE /// FIDE-Nutters /// Nutters-FIDE /// Clobberers-Nutters /// Nutters-Clobberers /// FIDE-Rookies /// Rookies-FIDE /// Clobberers-Rookies /// Rookies-Clobberers /// Nutters-Rookies /// Rookies-Nutters"
+322 >first : accepted option
+322 <first : feature option="Makruk rules -combo makruk /// Cambodian /// Ai-wok"
+322 >first : accepted option
+322 <first : feature option="Dummy Slider Example -slider 20 0 100"
+322 >first : accepted option
+322 <first : feature option="Dummy String Example -string happy birthday!"
+322 >first : accepted option
+322 <first : feature option="Dummy Path Example -path ."
+322 >first : accepted option
+322 <first : feature option="Automatic persistent-hash dialog -check 0"
+322 >first : accepted option
+322 <first : feature option="Info -button"
+322 >first : accepted option
+322 <first : feature option="Save in hash file -button"
+322 >first : accepted option
+322 <first : feature option="Clear Hash -button"
+322 >first : accepted option
+322 <first : feature done=1
+322 >first : accepted done
+323 >first : memory 68
+323 >first : new
+random
+323 >first : level 40 5 0
+323 >first : post
+323 >first : hard
+323 >first : ping 1
+354 <first : pong 1
+3930 >first : quit
+Unload first
+StartChildProcess (dir=".") java Main
+3942 >first : xboard
+protover 2
+Reset(1, 1) from gameMode 0
+recognized 'normal' (-1) as variant normal
+GameEnds(0, (null), 2)
+3943 >first : force
+shuffleOpenings = 0
+3953 >first : new
+random
+3959 >first : level 40 5 0
+3959 >first : post
+3959 >first : hard
+4089 <first : feature sigint=0 done=1
+4089 >first : accepted sigint
+4089 >first : accepted done
+recognized 'normal' (-1) as variant normal
+4091 >first : new
+random
+4091 >first : level 40 5 0
+4091 >first : post
+4091 >first : hard
+nps: w=-1, b=-1
+nps: w=-1, b=-1
+5208 >first : time 30000
+5208 >first : otim 30000
+book hit = (NULL)
+5208 >first : e2e3
+5348 <first : sahFromRook rook
+5348 <first : sahFromRook queen
+5350 <first : sahFromRook rook
+5350 <first : sahFromRook queen
+5351 <first : sahFromRook rook
+5352 <first : sahFromRook queen
+5353 <first : sahFromRook rook
+5353 <first : sahFromRook queen
+5354 <first : move b8a6
+6435 >first : time 29985
+6435 >first : otim 29891
+book hit = (NULL)
+6435 >first : f2f4
+6526 <first : sahFromRook rook
+6526 <first : sahFromRook queen
+6526 <first : sahFromRook rook
+6526 <first : sahFromRook queen
+6526 <first : sahFromRook rook
+6526 <first : sahFromRook queen
+6526 <first : sahFromRook rook
+6526 <first : sahFromRook queen
+6526 <first : move g8f6
+7424 >first : time 29976
+7424 >first : otim 29802
+book hit = (NULL)
+7424 >first : g2g4
+7508 <first : sahFromRook rook
+7508 <first : sahFromRook queen
+7509 <first : sahFromRook rook
+7509 <first : sahFromRook queen
+7509 <first : sahFromRook rook
+7509 <first : sahFromRook queen
+7509 <first : sahFromRook rook
+7509 <first : sahFromRook queen
+7511 <first : sahFromRook rook
+7511 <first : sahFromRook queen
+7511 <first : sahFromRook rook
+7511 <first : sahFromRook queen
+7511 <first : sahFromRook rook
+7511 <first : sahFromRook queen
+7511 <first : sahFromRook rook
+7511 <first : sahFromRook queen
+7511 <first : move b7b5
+8411 >first : time 29967
+8411 >first : otim 29712
+book hit = (NULL)
+8411 >first : g4g5
+8508 <first : sahFromRook rook
+8508 <first : sahFromRook queen
+8508 <first : sahFromRook rook
+8508 <first : sahFromRook queen
+8508 <first : sahFromRook rook
+8508 <first : sahFromRook queen
+8508 <first : sahFromRook rook
+8508 <first : sahFromRook queen
+8508 <first : sahFromRook rook
+8508 <first : sahFromRook queen
+8508 <first : sahFromRook rook
+8508 <first : sahFromRook queen
+8508 <first : sahFromRook rook
+8508 <first : sahFromRook queen
+8508 <first : sahFromRook rook
+8508 <first : sahFromRook queen
+8508 <first : move a6c5
+9240 >first : time 29957
+9240 >first : otim 29639
+book hit = (NULL)
+9240 >first : g5f6
+9331 <first : sahFromRook rook
+9332 <first : sahFromRook queen
+9332 <first : sahFromRook rook
+9332 <first : sahFromRook queen
+9332 <first : sahFromRook rook
+9332 <first : sahFromRook queen
+9332 <first : sahFromRook rook
+9332 <first : sahFromRook queen
+9332 <first : sahFromRook rook
+9332 <first : sahFromRook queen
+9332 <first : sahFromRook rook
+9332 <first : sahFromRook queen
+9332 <first : sahFromRook rook
+9332 <first : sahFromRook queen
+9332 <first : sahFromRook rook
+9332 <first : sahFromRook queen
+9332 <first : sahFromRook rook
+9332 <first : sahFromRook queen
+9332 <first : move c5d3
+12410 >first : time 29948
+12410 >first : otim 29331
+book hit = (NULL)
+12410 >first : c2d3
+12499 <first : sahFromRook rook
+12499 <first : sahFromRook queen
+12499 <first : sahFromRook rook
+12499 <first : sahFromRook queen
+12499 <first : sahFromRook rook
+12499 <first : sahFromRook queen
+12499 <first : sahFromRook rook
+12499 <first : sahFromRook queen
+12499 <first : move g7g6
+14716 >first : time 29939
+14717 >first : otim 29109
+book hit = (NULL)
+14717 >first : h2h4
+14805 <first : sahFromRook rook
+14805 <first : sahFromRook queen
+14805 <first : sahFromRook rook
+14805 <first : sahFromRook queen
+14805 <first : sahFromRook rook
+14805 <first : sahFromRook queen
+14805 <first : move b5b4
+16102 >first : time 29930
+16102 >first : otim 28980
+book hit = (NULL)
+16102 >first : h4h5
+16193 <first : sahFromRook rook
+16193 <first : sahFromRook queen
+16193 <first : sahFromRook rook
+16193 <first : sahFromRook queen
+16193 <first : sahFromRook rook
+16193 <first : sahFromRook queen
+16193 <first : sahFromRook rook
+16193 <first : sahFromRook queen
+16193 <first : move e7e6
+17134 >first : time 29921
+17134 >first : otim 28885
+book hit = (NULL)
+17134 >first : h5g6
+17227 <first : sahFromRook rook
+17227 <first : sahFromRook queen
+17227 <first : sahFromRook rook
+17227 <first : sahFromRook queen
+17227 <first : sahFromRook rook
+17227 <first : sahFromRook queen
+17227 <first : move h7h5
+GameEnds(29, xboard exit, 2)
+25864 >first : result * {xboard exit}
+25864 >first : force
+25865 >first : quit
